@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<h1> Calculator </h1>
+
+<h5 id="value"> </h5 id="value">
+
+</body>
+
+<script>
+
+   
+    function digitalClock(){
+        let date= new Date();
+        let time= "Current Time is "+date.getHours()+ ":"+date.getMinutes()+":"+ date.getSeconds();
+        document.getElementById("value").innerHTML=time;
+        setTimeout(digitalClock,1000);
+    }
+    digitalClock();
+
+</script>
+
+</html>

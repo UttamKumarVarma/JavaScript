@@ -1,0 +1,16 @@
+// Storing JSON data in a variable.
+let text = '{ "employees" : [' +
+'{ "firstName": "John" , "lastName": "Doe" },' +
+'{ "firstName": "Anna", "lastName": "Smith" },' + 
+'{ "firstName": "Peter" , "lastName":"Jones" }]}';
+
+// Convert JSON variable to JS Object
+let val = JSON.parse(text);
+
+// Accessing data from the object
+console.log(val.employees[1]); // Output: Anna
+
+//retrieving value Jones
+console.log(val.employees[2].lastName)
+
+console.log(val.employees);
